@@ -34,11 +34,7 @@ h1 {
 }
 
 .flashCard > .question {
-	/*color: rgba(0, 0, 0, 0.40);*/
 	color: darkblue;
-}
-
-.flashCard > .answer {
 }
 
 .leader {

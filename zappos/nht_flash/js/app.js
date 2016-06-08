@@ -178,7 +178,7 @@ $(document).ready(function() {
 				answer  : "90 days"
 			},
 			{
-				question: "What is the importance of keeping internal policiies, internal?",
+				question: "What is the importance of keeping internal policies, internal?",
 				answer  : "To prevent abuse and to keep the WOW"
 			},
 			{
@@ -253,15 +253,15 @@ $(document).ready(function() {
 	app.ApplicationView = Backbone.View.extend({
 		el: "#app",
 		start: function() {
-			this.showNextCard();
+			this.renderNextCard();
 		},
 		render: function() {
 			this.flashCardView.render();
 			this.$el.html(this.flashCardView.el);
 		},
-		showNextCard: function() {
+		renderNextCard: function() {
 			this.flashCardView = new app.FlashCardView({model: this.collection.nextQuestion()});
-			this.listenTo(this.flashCardView, 'done', this.showNextCard);
+			this.listenToOnce(this.flashCardView, 'done', this.renderNextCard);
 			this.render();
 		}
 	});
