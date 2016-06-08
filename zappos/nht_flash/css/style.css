@@ -1,0 +1,48 @@
+body {
+	background-color: #444;
+	color: white;
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+h1 {
+	font-size: 	5em;
+	margin-bottom: 0.1em;
+}
+
+#header {
+	text-align: center;
+}
+
+.subtitle {
+	margin-bottom: 2em;
+}
+
+#container {
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.flashCard {
+	background-color: white;
+	color: #333;
+	padding: 1em;
+	font-size: 3em;
+	font-weight: bold;
+	border-radius: 0.5em;
+	word-wrap: break-word;
+}
+
+.flashCard > .question {
+	/*color: rgba(0, 0, 0, 0.40);*/
+	color: darkblue;
+}
+
+.flashCard > .answer {
+}
+
+.leader {
+	font-size: 0.4em;
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: italic;
+}
